@@ -102,7 +102,7 @@ export default function MetricasProyectosPage() {
 
   return (
     <div className="space-y-8 p-1 md:p-2 max-w-[1600px] mx-auto pb-12">
-      <header className="flex flex-col xl:flex-row xl:items-center justify-between gap-6 bg-card p-6 rounded-2xl border shadow-sm">
+      <header className="glass-panel flex flex-col xl:flex-row xl:items-center justify-between gap-6 p-6 rounded-2xl">
         <div>
           <div className="flex items-center gap-3 mb-1">
             <div className="p-2 bg-primary/10 rounded-lg">
@@ -220,7 +220,7 @@ export default function MetricasProyectosPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <Card className="lg:col-span-2 shadow-md border-muted/30 overflow-hidden bg-card/50 backdrop-blur-sm">
+        <Card className="lg:col-span-2 shadow-md border-muted/30 overflow-hidden bg-card/40">
           <CardHeader className="border-b bg-muted/5">
             <div className="flex items-center justify-between">
                 <div>
@@ -265,7 +265,7 @@ export default function MetricasProyectosPage() {
           </CardContent>
         </Card>
 
-        <Card className="shadow-md border-muted/30 flex flex-col bg-card/50 backdrop-blur-sm">
+        <Card className="shadow-md border-muted/30 flex flex-col bg-card/40">
           <CardHeader className="border-b bg-muted/5">
             <CardTitle className="text-lg font-bold flex items-center gap-2">
                 <PieChartIcon className="h-5 w-5 text-indigo-500" />

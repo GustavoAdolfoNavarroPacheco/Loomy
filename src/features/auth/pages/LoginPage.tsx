@@ -73,8 +73,13 @@ const LoginPage: React.FC = () => {
     }
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-surface-accent via-background to-muted px-4 py-12">
-            <div className="w-full max-w-md space-y-8">
+        <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-surface-accent via-background to-muted px-4 py-12">
+            {/* Fondo de cristal decorativo */}
+            <div aria-hidden className="pointer-events-none absolute inset-0">
+                <div className="absolute -top-24 -left-24 h-80 w-80 rounded-full opacity-25 blur-3xl" style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }} />
+                <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full opacity-20 blur-3xl" style={{ background: 'linear-gradient(135deg, #8b5cf6, #06b6d4)' }} />
+            </div>
+            <div className="relative w-full max-w-md space-y-8">
                 <div className="text-center">
                     <div className="flex items-center justify-center gap-2 mb-2">
                         <Sparkles className="h-8 w-8 text-primary" />
@@ -91,7 +96,7 @@ const LoginPage: React.FC = () => {
                     </span>
                 </div>
 
-                <Card className="border border-border/60 shadow-lg bg-card/95 backdrop-blur-sm">
+                <Card className="shadow-xl">
                     <CardHeader className="space-y-1">
                         <CardTitle className="text-2xl text-center">Bienvenido</CardTitle>
                         <CardDescription className="text-center">
@@ -126,7 +131,7 @@ const LoginPage: React.FC = () => {
                                 <span className="w-full border-t border-border" />
                             </div>
                             <div className="relative flex justify-center">
-                                <span className="bg-card px-3 text-[10px] uppercase tracking-widest text-muted-foreground">
+                                <span className="bg-background/40 px-3 text-[10px] uppercase tracking-widest text-muted-foreground">
                                     o ingresa con correo
                                 </span>
                             </div>
@@ -164,7 +169,7 @@ const LoginPage: React.FC = () => {
                             </Button>
                         </form>
                     </CardContent>
-                    <CardFooter className="flex flex-col border-t border-border bg-muted/40 p-6 text-center text-[10px] text-muted-foreground rounded-b-lg">
+                    <CardFooter className="flex flex-col border-t border-border bg-muted/40 p-6 text-center text-[10px] text-muted-foreground rounded-b-2xl">
                         <p className="uppercase tracking-widest font-bold">Acceso restringido solo a personal autorizado.</p>
                     </CardFooter>
                 </Card>

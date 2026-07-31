@@ -452,7 +452,7 @@ export default function ProyeccionPage() {
                 </div>
             </div>
 
-            <Card className="flex-1 min-h-0 border-none shadow-md bg-card/50 backdrop-blur-sm overflow-hidden flex flex-col">
+            <Card className="flex-1 min-h-0 border-none shadow-md bg-card/40 overflow-hidden flex flex-col">
                 <CardHeader className="py-2 px-4 shrink-0">
                     <CardTitle className="text-sm font-semibold">Tabla de Proyecciones</CardTitle>
                 </CardHeader>

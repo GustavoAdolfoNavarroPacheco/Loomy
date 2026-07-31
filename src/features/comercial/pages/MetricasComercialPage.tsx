@@ -192,7 +192,7 @@ export default function MetricasComercialPage() {
   return (
     <div className="space-y-8 p-1 md:p-2 max-w-[1600px] mx-auto pb-12">
       {/* ──────────────────── HEADER ──────────────────── */}
-      <header className="flex flex-col gap-6 bg-card p-6 rounded-2xl border shadow-sm">
+      <header className="glass-panel flex flex-col gap-6 p-6 rounded-2xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-3 mb-1">
@@ -377,7 +377,7 @@ export default function MetricasComercialPage() {
           {/* ──────────────────── CHARTS ──────────────────── */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Weekly Activity */}
-            <Card className="shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm overflow-hidden">
+            <Card className="shadow-lg border-muted/20 bg-card/40 overflow-hidden">
               <CardHeader className="border-b bg-muted/5">
                 <CardTitle className="text-lg font-bold flex items-center gap-2">
                   <Activity className="h-5 w-5 text-cyan-500" />
@@ -427,7 +427,7 @@ export default function MetricasComercialPage() {
             </Card>
 
             {/* Pipeline / Funnel */}
-            <Card className="shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm overflow-hidden">
+            <Card className="shadow-lg border-muted/20 bg-card/40 overflow-hidden">
               <CardHeader className="border-b bg-muted/5">
                 <CardTitle className="text-lg font-bold flex items-center gap-2">
                   <Target className="h-5 w-5 text-cyan-500" />
@@ -475,7 +475,7 @@ export default function MetricasComercialPage() {
           {/* ──────────────────── SECTOR DISTRIBUTION ──────────────────── */}
           {sectorDistribution.length > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <Card className="shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm overflow-hidden lg:col-span-1">
+              <Card className="shadow-lg border-muted/20 bg-card/40 overflow-hidden lg:col-span-1">
                 <CardHeader className="border-b bg-muted/5">
                   <CardTitle className="text-lg font-bold">Distribución por Sector</CardTitle>
                   <CardDescription>Proporción de empresas por industria</CardDescription>
@@ -515,7 +515,7 @@ export default function MetricasComercialPage() {
               </Card>
 
               {/* Summary Table */}
-              <Card className="shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm overflow-hidden lg:col-span-2">
+              <Card className="shadow-lg border-muted/20 bg-card/40 overflow-hidden lg:col-span-2">
                 <CardHeader className="border-b bg-muted/5">
                   <CardTitle className="text-lg font-bold">Resumen de Empresas</CardTitle>
                   <CardDescription>

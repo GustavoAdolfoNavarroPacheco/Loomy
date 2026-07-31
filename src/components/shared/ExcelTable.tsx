@@ -270,7 +270,7 @@ export function ExcelTable<T extends { id: string }>({
   };
 
   return (
-    <div className="rounded-md border border-border bg-card shadow-sm overflow-auto h-full relative">
+    <div className="glass-table rounded-2xl overflow-auto h-full relative">
       <table className={cn("w-full caption-bottom", compact ? "text-[11px]" : "text-sm")}>
         <TableHeader className={cn(headerClassName || "bg-module", "sticky top-0 z-[5]")}>
           <TableRow className={cn("border-b-0", !headerClassName && "hover:bg-module/90")}>

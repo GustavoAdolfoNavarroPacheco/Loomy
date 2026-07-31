@@ -58,7 +58,7 @@ export function TopNavbar() {
   const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(path + '/');
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-card/90 backdrop-blur-md shadow-sm">
+    <header className="glass-nav sticky top-0 z-50 w-full">
       <div className="w-full px-6 h-16 flex items-center justify-between gap-4">
         {/* Logo / Brand */}
         <div className="flex items-center gap-2 font-bold text-xl text-foreground shrink-0">

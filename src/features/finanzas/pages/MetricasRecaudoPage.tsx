@@ -96,7 +96,7 @@ export default function MetricasRecaudoPage() {
 
   return (
     <div className="space-y-8 p-1 md:p-2 max-w-[1600px] mx-auto pb-12">
-      <header className="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-card p-6 rounded-2xl border shadow-sm">
+      <header className="glass-panel flex flex-col md:flex-row md:items-center justify-between gap-6 p-6 rounded-2xl">
         <div>
           <div className="flex items-center gap-3 mb-1">
             <div className="p-2 bg-emerald-500/10 rounded-lg">
@@ -198,7 +198,7 @@ export default function MetricasRecaudoPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <Card className="lg:col-span-3 shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm overflow-hidden">
+        <Card className="lg:col-span-3 shadow-lg border-muted/20 bg-card/40 overflow-hidden">
           <CardHeader className="border-b bg-muted/5">
             <CardTitle className="text-lg font-bold flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-emerald-500" />
@@ -249,7 +249,7 @@ export default function MetricasRecaudoPage() {
           </CardContent>
         </Card>
 
-        <Card className="shadow-lg border-muted/20 bg-card/50 backdrop-blur-sm flex flex-col">
+        <Card className="shadow-lg border-muted/20 bg-card/40 flex flex-col">
           <CardHeader className="border-b bg-muted/5">
             <CardTitle className="text-lg font-bold">Acumulado Anual</CardTitle>
             <CardDescription>Recaudo total por año</CardDescription>
