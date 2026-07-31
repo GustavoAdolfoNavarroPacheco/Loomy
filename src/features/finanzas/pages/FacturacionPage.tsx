@@ -303,7 +303,7 @@ export default function FacturacionPage() {
         </div>
       </div>
 
-      <div className="flex-1 min-h-0 bg-card rounded-lg border border-border overflow-hidden">
+      <div className="flex-1 min-h-0">
         <ExcelTable
           data={filteredFacturas}
           columns={columns}

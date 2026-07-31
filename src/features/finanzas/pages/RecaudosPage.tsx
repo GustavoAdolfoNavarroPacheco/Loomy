@@ -259,7 +259,7 @@ export default function RecaudosPage() {
         </div>
       </div>
 
-      <div className="flex-1 min-h-0 bg-card rounded-lg border border-border overflow-hidden">
+      <div className="flex-1 min-h-0">
         <ExcelTable
           data={filteredRecaudos}
           columns={columns}

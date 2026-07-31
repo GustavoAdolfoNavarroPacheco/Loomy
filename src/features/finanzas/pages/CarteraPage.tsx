@@ -177,7 +177,7 @@ export default function CarteraPage() {
         </Card>
       </div>
 
-      <div className="flex-1 min-h-0 rounded-lg bg-card border border-border overflow-hidden">
+      <div className="flex-1 min-h-0">
         <ExcelTable
           data={filteredItems}
           columns={columns}
