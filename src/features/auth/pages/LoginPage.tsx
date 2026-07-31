@@ -76,8 +76,9 @@ const LoginPage: React.FC = () => {
         <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-surface-accent via-background to-muted px-4 py-12">
             {/* Fondo de cristal decorativo */}
             <div aria-hidden className="pointer-events-none absolute inset-0">
-                <div className="absolute -top-24 -left-24 h-80 w-80 rounded-full opacity-25 blur-3xl" style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }} />
-                <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full opacity-20 blur-3xl" style={{ background: 'linear-gradient(135deg, #8b5cf6, #06b6d4)' }} />
+                <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full opacity-50 blur-3xl" style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }} />
+                <div className="absolute bottom-0 right-0 h-[28rem] w-[28rem] rounded-full opacity-40 blur-3xl" style={{ background: 'linear-gradient(135deg, #8b5cf6, #06b6d4)' }} />
+                <div className="absolute top-1/3 left-1/2 h-72 w-72 rounded-full opacity-30 blur-3xl" style={{ background: 'linear-gradient(135deg, #06b6d4, #6366f1)' }} />
             </div>
             <div className="relative w-full max-w-md space-y-8">
                 <div className="text-center">

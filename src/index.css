@@ -161,26 +161,26 @@
 /* Estilos de cristal (glassmorphism) */
 @layer components {
   .glass-panel {
-    background: linear-gradient(145deg, hsl(var(--card) / 0.55), hsl(var(--card) / 0.25));
-    -webkit-backdrop-filter: blur(18px) saturate(150%);
-    backdrop-filter: blur(18px) saturate(150%);
-    border: 1px solid hsl(var(--foreground) / 0.08);
-    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.06), inset 0 1px 0 hsl(var(--foreground) / 0.04);
+    background: linear-gradient(145deg, hsl(var(--card) / 0.65), hsl(var(--card) / 0.28));
+    -webkit-backdrop-filter: blur(20px) saturate(170%);
+    backdrop-filter: blur(20px) saturate(170%);
+    border: 1px solid hsl(var(--foreground) / 0.12);
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.10), inset 0 1px 0 hsl(var(--foreground) / 0.06);
   }
 
   .glass-nav {
-    background: hsl(var(--card) / 0.6);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    backdrop-filter: blur(20px) saturate(160%);
-    border-bottom: 1px solid hsl(var(--foreground) / 0.08);
+    background: linear-gradient(180deg, hsl(var(--card) / 0.75), hsl(var(--card) / 0.5));
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: 1px solid hsl(var(--foreground) / 0.12);
   }
 
   .glass-table {
-    background: hsl(var(--card) / 0.45);
-    -webkit-backdrop-filter: blur(16px) saturate(140%);
-    backdrop-filter: blur(16px) saturate(140%);
-    border: 1px solid hsl(var(--foreground) / 0.08);
-    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.05);
+    background: hsl(var(--card) / 0.5);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid hsl(var(--foreground) / 0.12);
+    box-shadow: 0 8px 32px hsl(var(--foreground) / 0.08);
   }
 }
 
