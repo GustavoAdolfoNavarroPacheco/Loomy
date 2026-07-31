@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base neutra — piedra fría, superficies en la misma familia */
+    --background: 220 14% 94%;
+    --foreground: 220 20% 14%;
+    --surface-accent: 220 14% 94%;
+
+    --card: 220 12% 98.5%;
+    --card-foreground: 220 20% 14%;
+
+    --popover: 220 12% 98.5%;
+    --popover-foreground: 220 20% 14%;
+
+    /* Marca fija para botones, navegación y controles */
+    --primary: 220 18% 22%;
+    --primary-foreground: 220 10% 98%;
+
+    --secondary: 220 10% 90%;
+    --secondary-foreground: 220 18% 22%;
+
+    --muted: 220 10% 91%;
+    --muted-foreground: 220 8% 44%;
+
+    --accent: 220 12% 89%;
+    --accent-foreground: 220 18% 18%;
+
+    --destructive: 0 62% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 86%;
+    --input: 220 10% 86%;
+    --ring: 220 18% 22%;
+
+    --radius: 0.5rem;
+
+    /* Acento por módulo — tablas y tinte de página */
+    --module: 220 18% 22%;
+    --module-foreground: 220 10% 98%;
+
+    --sidebar-background: 220 12% 96%;
+    --sidebar-foreground: 220 12% 28%;
+    --sidebar-primary: 220 18% 22%;
+    --sidebar-primary-foreground: 220 10% 98%;
+    --sidebar-accent: 220 12% 93%;
+    --sidebar-accent-foreground: 220 18% 18%;
+    --sidebar-border: 220 12% 88%;
+    --sidebar-ring: 220 18% 22%;
+  }
+
+  .dark {
+    --background: 220 18% 9%;
+    --foreground: 220 10% 96%;
+    --surface-accent: 220 18% 9%;
+
+    --card: 220 16% 12%;
+    --card-foreground: 220 10% 96%;
+
+    --popover: 220 16% 12%;
+    --popover-foreground: 220 10% 96%;
+
+    --primary: 220 10% 92%;
+    --primary-foreground: 220 18% 12%;
+
+    --secondary: 220 14% 16%;
+    --secondary-foreground: 220 10% 96%;
+
+    --muted: 220 14% 16%;
+    --muted-foreground: 220 8% 62%;
+
+    --accent: 220 14% 18%;
+    --accent-foreground: 220 10% 96%;
+
+    --destructive: 0 55% 42%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 12% 18%;
+    --input: 220 12% 18%;
+    --ring: 220 10% 80%;
+
+    --module: 220 14% 32%;
+    --module-foreground: 220 10% 98%;
+
+    --sidebar-background: 220 18% 8%;
+    --sidebar-foreground: 220 10% 90%;
+    --sidebar-primary: 220 10% 92%;
+    --sidebar-primary-foreground: 220 18% 10%;
+    --sidebar-accent: 220 14% 14%;
+    --sidebar-accent-foreground: 220 10% 96%;
+    --sidebar-border: 220 12% 16%;
+    --sidebar-ring: 220 10% 80%;
+  }
+
+  /* Paleta de módulos — misma saturación y luminosidad, familias distintas */
+  .theme-royal {
+    --module: 258 32% 40%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 258 22% 94%;
+  }
+
+  .theme-midnight {
+    --module: 214 34% 38%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 214 22% 94%;
+  }
+
+  .theme-obsidian {
+    --module: 220 14% 30%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 220 12% 93%;
+  }
+
+  .theme-ocean {
+    --module: 199 36% 36%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 199 22% 94%;
+  }
+
+  .theme-emerald {
+    --module: 168 30% 34%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 168 18% 94%;
+  }
+
+  .theme-forest {
+    --module: 162 28% 34%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 162 18% 94%;
+  }
+
+  .theme-wine {
+    --module: 350 26% 38%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 350 18% 94%;
+  }
+
+  .theme-indigo {
+    --module: 235 28% 40%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 235 20% 94%;
+  }
+
+  .theme-slate {
+    --module: 220 10% 40%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 220 10% 93%;
+  }
+
+  .theme-amber {
+    --module: 32 60% 40%;
+    --module-foreground: 0 0% 100%;
+    --surface-accent: 32 30% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply tracking-tight text-foreground;
+  }
+
+  /* Cabeceras de tabla por módulo */
+  .theme-royal,
+  .theme-midnight,
+  .theme-obsidian,
+  .theme-ocean,
+  .theme-emerald,
+  .theme-slate,
+  .theme-forest,
+  .theme-wine,
+  .theme-indigo,
+  .theme-amber {
+    table thead tr {
+      @apply bg-module hover:bg-module border-none;
+    }
+
+    table thead th {
+      @apply text-module-foreground font-semibold h-12 px-4;
+    }
+
+    table thead th svg {
+      @apply opacity-80;
+    }
+  }
+}
