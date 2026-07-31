@@ -1,5 +1,5 @@
-import { sql } from '../_lib/db.js';
-import { getSessionUser, readBody } from '../_lib/auth.js';
+import { sql } from '../../_lib/db.js';
+import { getSessionUser, readBody } from '../../_lib/auth.js';
 
 // PUT    /api/collections/:name/:id → merge update (upsert)
 // DELETE /api/collections/:name/:id → remove item

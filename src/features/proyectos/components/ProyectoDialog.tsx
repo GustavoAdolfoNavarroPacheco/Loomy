@@ -19,6 +19,7 @@ import {
 import { useData } from '@/contexts/DataContext';
 import { Proyecto, EstadoProyecto } from '@/types';
 import { Loader2, Check, ChevronsUpDown, AlertTriangle } from 'lucide-react';
+import { toast } from 'sonner';
 import { isDuplicateValue } from '@/lib/utils';
 import { cn } from "@/lib/utils";
 import {
@@ -129,7 +130,7 @@ export function ProyectoDialog({ open, onClose, proyecto }: ProyectoDialogProps)
       onClose();
     } catch (error) {
       console.error('Error saving proyecto:', error);
-      alert('Error al guardar el proyecto.');
+      toast.error('Error al guardar el proyecto', { description: 'Por favor intente de nuevo.' });
     } finally {
       setIsSubmitting(false);
     }

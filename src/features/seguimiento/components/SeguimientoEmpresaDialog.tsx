@@ -20,6 +20,7 @@ import { useData } from '@/contexts/DataContext';
 import { SeguimientoEmpresa } from '@/types/seguimiento';
 import { Loader2, AlertTriangle } from 'lucide-react';
 import { isDuplicateValue } from '@/lib/utils';
+import { toast } from 'sonner';
 
 interface SeguimientoEmpresaDialogProps {
   open: boolean;
@@ -101,7 +102,7 @@ export function SeguimientoEmpresaDialog({ open, onClose, empresa }: Seguimiento
       onClose();
     } catch (error) {
       console.error('Error saving empresa de seguimiento:', error);
-      alert('Error al guardar la empresa. Por favor intente de nuevo.');
+      toast.error('Error al guardar la empresa', { description: 'Por favor intente de nuevo.' });
     } finally {
       setIsSubmitting(false);
     }

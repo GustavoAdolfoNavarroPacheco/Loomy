@@ -14,6 +14,7 @@ import { Label } from '@/components/ui/label';
 import { useData } from '@/contexts/DataContext';
 import { Factura } from '@/types';
 import { Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
 import {
   Command,
   CommandEmpty,
@@ -113,7 +114,7 @@ export function FacturaDialog({ open, onClose, factura }: FacturaDialogProps) {
       onClose();
     } catch (error) {
       console.error('Error saving factura:', error);
-      alert('Error al guardar la factura.');
+      toast.error('Error al guardar la factura', { description: 'Por favor intente de nuevo.' });
     } finally {
       setIsSubmitting(false);
     }
