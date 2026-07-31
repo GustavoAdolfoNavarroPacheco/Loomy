@@ -26,7 +26,6 @@ import MetricasRecaudoPage from "@/features/finanzas/pages/MetricasRecaudoPage";
 import ConfiguracionPage from "@/features/configuracion/pages/ConfiguracionPage";
 import ProyeccionPage from "@/features/proyectos/pages/ProyeccionPage";
 import ListaClientesPage from "@/features/clientes/pages/ListaClientesPage";
-import ChatBotPage from "@/features/chatbot/pages/ChatBotPage";
 import MetricasComercialPage from "@/features/comercial/pages/MetricasComercialPage";
 import SeguimientoEmpresasPage from "@/features/seguimiento/pages/SeguimientoEmpresasPage";
 import InfoEmpresaPage from "@/features/seguimiento/pages/InfoEmpresaPage";
@@ -100,7 +99,6 @@ const App = () => {
                         <Route path="/facturacion" element={<FacturacionPage />} />
                         <Route path="/recaudos" element={<RecaudosPage />} />
                         <Route path="/cartera" element={<CarteraPage />} />
-                        <Route path="/chatbot" element={<ChatBotPage />} />
                         <Route path="/metricas/proyectos" element={<MetricasProyectosPage />} />
                         <Route path="/metricas/empresas" element={<MetricasEmpresasPage />} />
                         <Route path="/metricas/cartera" element={<MetricasCarteraPage />} />

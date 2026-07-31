@@ -11,7 +11,6 @@ import {
   Users,
   Globe,
   MapPin,
-  MessageSquare,
 } from 'lucide-react';
 import {
   Sidebar,
@@ -35,7 +34,6 @@ const mainMenuItems = [
   { title: 'Cartera', url: '/cartera', icon: Wallet },
   { title: 'Proyección', url: '/proyeccion', icon: BarChart3 },
   { title: 'Clientes', url: '/clientes', icon: Users },
-  { title: 'ChatBot', url: '/chatbot', icon: MessageSquare },
 ];
 
 const metricasItems = [
@@ -55,7 +53,6 @@ export function AppSidebar() {
   const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(path + '/');
 
   const filteredMainMenu = mainMenuItems
-    .filter(i => environment === 'local' || i.title !== 'ChatBot')
     .filter(i => !isCotizador || ['Proyectos', 'Facturación', 'Proyección'].includes(i.title));
 
   const filteredMetricas = metricasItems;

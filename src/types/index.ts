@@ -273,20 +273,3 @@ export interface ProductoProyeccion {
   createdAt: Date;
 }
 
-// ChatBot types
-export interface Chat {
-  sessionId: string;
-  clientName?: string;
-  ai_enabled: boolean;
-  lastMessage: string;
-  lastSender: 'bot' | 'client' | 'human' | string;
-  createdAt: string;
-  updatedAt: string;
-}
-
-export interface ChatMessage {
-  sender: 'bot' | 'client' | 'human' | string;
-  text: string;
-  timestamp: string;
-}
-

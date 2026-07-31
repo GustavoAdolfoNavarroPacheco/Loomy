@@ -18,7 +18,6 @@ export function MainLayout({ children }: MainLayoutProps) {
     if (path.startsWith('/proyectos')) return 'theme-royal';
     if (path.startsWith('/facturacion')) return 'theme-midnight';
     if (path.startsWith('/recaudos')) return 'theme-emerald';
-    if (path.startsWith('/chatbot')) return 'theme-emerald';
     if (path.startsWith('/cartera')) return 'theme-obsidian';
     if (path.startsWith('/metricas')) return 'theme-ocean';
     if (path.startsWith('/configuracion')) return 'theme-slate';

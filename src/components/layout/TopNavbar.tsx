@@ -12,7 +12,6 @@ import {
   Globe,
   MapPin,
   ChevronDown,
-  MessageSquare,
   ClipboardList,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -36,7 +35,6 @@ const mainMenuItems = [
   { title: 'Cartera', url: '/cartera', icon: Wallet },
   { title: 'Proyección', url: '/proyeccion', icon: BarChart3 },
   { title: 'Clientes', url: '/clientes', icon: Users },
-  { title: 'ChatBot', url: '/chatbot', icon: MessageSquare },
 ];
 
 const metricasItems = [
@@ -53,7 +51,6 @@ export function TopNavbar() {
   const location = useLocation();
 
   const filteredMainMenu = mainMenuItems
-    .filter(i => environment === 'local' || i.title !== 'ChatBot')
     .filter(i => !isCotizador || ['Proyectos', 'Facturación', 'Proyección'].includes(i.title));
 
   const filteredMetricas = metricasItems;
